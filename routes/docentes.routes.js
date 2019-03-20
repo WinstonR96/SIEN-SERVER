@@ -5,8 +5,8 @@ const docenteCtrl = require('../controllers/docente.controller');
 router.get('/docentes', docenteCtrl.ObtenerDocentes)
 router.post('/docentes', docenteCtrl.CrearDocentes)
 router.get('/docentes/:id', docenteCtrl.ObtenerDocente)
-router.put('/docentes:id', docenteCtrl.ActualizarDocente)
-router.post('/docentes:id', docenteCtrl.EliminarDocente)
+router.put('/docentes/:id', docenteCtrl.ActualizarDocente)
+router.post('/docentes/:id', docenteCtrl.EliminarDocente)
 
 
 
