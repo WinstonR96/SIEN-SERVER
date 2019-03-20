@@ -6,7 +6,8 @@ const DocenteSchema = new Schema({
     apellido: {type: String, required: true},
     edad: {type: Number, required: true},
     salario: {type: Number, required: true},
-    perfil: {type: String, required: true}
+    perfil: {type: String, required: true},
+    estado: {type: Number, required: true, default: 1}
 })
 
 module.exports = mongoose.model("Docente", DocenteSchema);
