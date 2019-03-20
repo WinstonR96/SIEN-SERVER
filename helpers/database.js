@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-
-const URI = 'mongodb://localhost/sien'
+require('dotenv').config()
+const URI = process.env.DATABASECONECTION
 
 mongoose.connect(URI, {useNewUrlParser: true } )
     .then(db => console.log("BD conectada"))

@@ -3,6 +3,7 @@ const morgan = require('morgan')
 const app = express()
 const { mongoose } = require('./helpers/database')
 const docente = require('./routes/docentes.routes')
+require('dotenv').config()
 //Configuraciones
 app.set('port', process.env.PORT || 3000)
 
